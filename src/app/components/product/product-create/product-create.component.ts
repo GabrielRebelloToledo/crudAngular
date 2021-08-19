@@ -10,16 +10,15 @@ import { Router } from '@angular/router';
   styleUrls: ['./product-create.component.css']
 })
 export class ProductCreateComponent implements OnInit {
-
+  ngOnInit(): void {
+    
+  }
+//criaando o metodo de criação
   product: Product = {
     name: '',
     price: 0
   }
   constructor( private productService: ProductService, private router: Router) { }
-
-  ngOnInit(): void {
-    
-  }
 
 
 createProduct(): void {
